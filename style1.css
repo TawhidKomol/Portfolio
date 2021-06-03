@@ -76,7 +76,7 @@ nav ul li a:hover{
     align-items: center;
     position: absolute;
     left: 50%;
-    top:50%;
+    top:53%;
     transform: translate(-50%,-50%);
 }
 .main-text{
@@ -364,94 +364,95 @@ footer p{
     color: #5f5f5f;
     font-size: 0.9rem;
 }
-nav .menu-btn{
-	display:none;
-}
+nav .menu-btn,
+.menu-icon{
+		display:none;
+	}
 @media(max-width:1140px){
-	.content {
-		width: 100%;
+	.content{
+		width:100%;
 	}
 	.model{
-		width: 400px;
+		width:400px;
 		height: 400px;
 	}
-	.main-text,
-	.model{
-		margin: 10px;
+	.main-text,.model{
+		margin:10px;
 	}
 	.main-text h1{
-		font-size: 3rem;
+		font-size:3rem;
 	}
 	.skill-img{
-		width: 400px;
+		width:400px;
 		height: 400px;
 	}
 	.client-box{
-		flex-grow: 0.5;
+		flex-grow:0.5;
 	}
 }
-@media(max-width:900px) 
-{
+@media(max-width:900px){
+.menu-icon{
+display:block;}
 	nav{
 		justify-content: space-between;
 		height: 65px;
-		padding: 0px, 30px;
+		padding: 0px 30px;
 	}
 	.logo img{
-		height: 35px;
+		height:35px;
 	}
 	.menu{
 		display:none;
-		position: absolute;
-		top: 65px;
-		left: 0px;
+		position:absolute;
+		top:65px;
+		left:0px;
 		background-color:#FFFFFF;
-		border-bottom: 4px solid #1db096;
-		width: 100%;
-		padding: 0px;
-		margin: 0px;
+		border-bottom:4px solid #1db096;
+		width:100%;
+		padding:0px;
+		margin:0px;
 	}
-    .menu li{
+	.menu li{
 		width:100%;
 	}
-	nav.menu li a{
-		width: 100%;
+	nav .menu li a{
+		width:100%;
 		height:40px;
 		justify-content: center;
 		align-items: center;
-		margin: 0px;
+		margin:0px;
 		padding: 25px;
-		border: 1px solid rgba(38,38,38,0.03);
+		border:1px solid rgba(38,38,38,0.03);
 	}
-	nav.menu-icon{
+	nav .menu-icon{
 		cursor:pointer;
 		float:right;
-		padding: 28px 20px;
+		padding:28px 20px;
 		position:relative;
 		user-select: none;
 	}
 	nav .menu-icon .nav-icon{
-		background-color: #333333;
+		background-color:#333333;
 		display:block;
-		height: 2px;
+		height:2px;
 		position:relative;
 		transition: background 0.2s ease-out;
-        width: 18px;
+		width:18px;
 	}
-	nav.menu-icon .nav-icon:before,
-	nav.menu-icon .nav-icon:after{
+	nav .menu-icon .nav-icon:before,
+	nav .menu-icon .nav-icon:after{
 		background:#333;
 		content:'';
 		display:block;
 		height:100%;
 		position:absolute;
-		transition: all ease-out 0.2s;
+		transition:all ease-out 0.2s;
 		width:100%;
 	}
-	nav.menu-icon .nav-icon:before{
+	nav .menu-icon .nav-icon:before{
 		top:5px;
 	}
-	nav.menu-icon .nav-icon:after{
+	nav .menu-icon .nav-icon:after{
 		top:-5px;
 	}
 	nav .menu-btn:checked ~ .menu-icon .nav-icon{
@@ -459,7 +460,7 @@ nav .menu-btn{
 	}
 	nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
 		transform: rotate(-45deg);
-    	top:0;
+		top:0;
 	}
 	nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
 		transform: rotate(45deg);
@@ -472,31 +473,32 @@ nav .menu-btn{
 		display:block;
 	}
 	#skills{
-			width:100%;
-			justify-content: space-between;
-			padding-left: 40px;
+		width:100%;
+		justify-content: space-between;
+		padding-left: 40px;
 	}
 	.skill-text{
-			width:400px;
+		width:400px;
 	}
 	.skill-img{
-			width:40%;
-			height:300px;
+		width:40%;
+		height:300px;
 	}
 	.skill-img img{
-			object-fit: cover;
-			object-position: left;
+		object-fit: cover;
+		object-position: left;
 	}
 	.recent-heading h3,
 	.client-heading h3,
 	#contact h3{
-			font-size:2.2rem;
-			text-align:center;
+		font-size:2.2rem;
+		text-align:center;
 	}
 	.recent-heading{
 		text-align:center;
 		padding:0px 15px;
 	}
+	
 }
 @media(max-width:720px){
 	.model{
@@ -508,6 +510,7 @@ nav .menu-btn{
 		left:50%;
 		top:50%;
 		transform:translate(-50%,-50%);
+		
 	}
 	#contact img{
 		height:200px;
@@ -524,7 +527,7 @@ nav .menu-btn{
 	}
 }
 @media(max-width:530px){
-    .contact-input{
+	.contact-input{
 		width:90%;
 	}
 	.skill-img{
