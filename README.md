@@ -1,6 +1,8 @@
 # Portfolio
 My Portfolio, built using html & css. You can find me on the social media links below:
 
+![App Screenshot](https://raw.githubusercontent.com/TawhidKomol/Portfolio/8166ee3ae0893dab8dd2cc23573bf10bf0b25d61/images/Untitled-2.png)
+
 
 ##  My Profile Links
 [![portfolio](https://img.shields.io/badge/portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://tawhidkomol.github.io/Portfolio/index.html)
